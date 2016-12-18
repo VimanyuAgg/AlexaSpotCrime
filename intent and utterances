@@ -1,0 +1,16 @@
+intent
+{
+
+    "intents": [{
+
+        "intent": "locationIntent",
+      "slots": [{"name":"pincode", "type": "AMAZON.NUMBER"}]
+    },{"intent":"cityIntent","slots":[{"name":"city","type":"AMAZON.US_CITY"}]}]}
+
+
+utterances
+locationIntent {pincode}
+locationIntent at {pincode}
+locationIntent pincode is {pincode}
+cityIntent {city}
+cityIntent city is {city}
