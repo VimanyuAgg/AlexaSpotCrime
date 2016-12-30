@@ -103,11 +103,6 @@ def checkcrime(pincode):
                 istreetcount[addressList.index(street)] += 1
 
 
-                # sorted(range(len(addressList)), key=lambda x: addressList[x])
-                # topThree = sorted(range(len(addressList)), key=lambda x: addressList[x])[-3:]
-
-
-                # print icrimecount
     total_crime = len(givenList)
     # print time_crime_slot
 
@@ -180,7 +175,7 @@ def checkcrime(pincode):
             dangerous1, dangerous2, dangerous3, icrimecount[0], crimeList[0], icrimecount[1], crimeList[1]))
 
 
-@ask.session_ended
+@ask.session_ended #Closing the session explicitly
 def session_ended():
     return "", 200
 
