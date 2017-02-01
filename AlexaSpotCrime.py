@@ -146,7 +146,7 @@ def checkcrime(pincode):
     dangerousList[str(addressList[secondIndex])] = istreetcount[secondIndex]
     dangerousList[str(addressList[thirdIndex])] = istreetcount[thirdIndex]
 
-    print dangerousList
+    #print dangerousList
 
     # theList = str(dangerousList.keys)
 
