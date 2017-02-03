@@ -18,10 +18,10 @@ def new_program():
 
 
 @ask.intent("locationIntent", convert={'pincode': int})
-def checkcrime(pincode):
+def checkcrime(zipcode):
     location = requests.get(
         'https://www.zipcodeapi.com/rest/jlUnmDmYcBb00Yavp06AMy3iZFqqI0c1l7pIKMGWnSWoQ6Tg7ZQTyUbxACYiCakY/info.json/{}/degrees'.format(
-            pincode))
+            zipcode))
     lng = json.loads(location.text)['lng']
     lat = json.loads(location.text)['lat']
     radius = 0.5
